@@ -57,7 +57,7 @@
             for(let i=0; i<imgFiles.length; i++){
                 const reader = new FileReader();
                 reader.onload = function(ev){
-                    box.innerHTML += `< img class="preview-img" src="${ev.target.result}">`;
+                    box.innerHTML += `<img class="preview-img" src="${ev.target.result}">`;
                 }
                 reader.readAsDataURL(imgFiles[i]);
             }
